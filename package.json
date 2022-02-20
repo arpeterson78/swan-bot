@@ -2,7 +2,7 @@
   "name": "swan-bot",
   "version": "1.0.0",
   "description": "Swan Bot",
-  "main": "main.js.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/arpeterson78/swan-bot/issues"
   },
-  "homepage": "https://github.com/arpeterson78/swan-bot#readme"
+  "homepage": "https://github.com/arpeterson78/swan-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^3.2.0"
+  }
 }

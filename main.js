@@ -1,10 +1,10 @@
 const { Client, Intents } = require('discord.js');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+require('dotenv').config();
 
 const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-// const bot = new Discord.Client();
-const token = 'OTM3NDU1NTMxNTI0NzYzNjk4.Yfb_fw.L6yivQU0Tp2QKxlHTrDHj_1CXu8'
+const token = process.env.DISCORD_API_KEY;
 
 const prefix = '!'
 
@@ -43,6 +43,5 @@ bot.on('message', async (msg) => {
     
   
 })
-
 
 bot.login(token);
