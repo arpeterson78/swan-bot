@@ -1,24 +1,14 @@
 {
-  "name": "swan-bot",
-  "version": "1.0.0",
-  "description": "Swan Bot",
-  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/Bot.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arpeterson78/swan-bot.git"
-  },
-  "author": "Greg Peterson",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/arpeterson78/swan-bot/issues"
-  },
-  "homepage": "https://github.com/arpeterson78/swan-bot#readme",
   "dependencies": {
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0",
-    "node-fetch": "^3.2.0"
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
   }
 }
