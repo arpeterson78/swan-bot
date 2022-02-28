@@ -1,4 +1,4 @@
-import { Client } from "discord.js";
+import { Client, CommandInteractionOptionResolver } from "discord.js";
 import { Commands } from "../commands";
 
 export default (client: Client): void => {
@@ -6,6 +6,8 @@ export default (client: Client): void => {
         if (!client.user || !client.application) {
             return;
         }
+
+        console.log(Commands);
 
         await client.application.commands.set(Commands);
 
