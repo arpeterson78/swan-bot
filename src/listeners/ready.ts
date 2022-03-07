@@ -6,9 +6,7 @@ export default (client: Client): void => {
         if (!client.user || !client.application) {
             return;
         }
-
-        console.log(Commands);
-
+        
         await client.application.commands.set(Commands);
 
         console.log(`${client.user.username} is online`);
